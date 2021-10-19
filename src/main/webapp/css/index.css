@@ -1,0 +1,27 @@
+body {
+  font-family: arial;
+  background-image: url('../images/fond.png');
+}
+h1 {
+  margin: auto;
+  height: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid;
+  font-size: 50px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: #4e4d4d;
+  position: fixed;
+  margin-left: -75px; /* half of width */
+  margin-top: -75px; /* half of height */
+  border-top: 4px solid #017bab;
+  top: 50%;
+  left: 25%;
+}

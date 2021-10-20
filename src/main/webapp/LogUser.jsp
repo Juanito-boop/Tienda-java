@@ -4,7 +4,8 @@
 
 	<head>
 		<title>Ingreso Usuario</title>
-		<link rel="stylesheet" href="/Grupo02GitHubTeam/css/LogUser.css">
+		<link rel="stylesheet" href="/Grupo02GitHubTeam/LogUser.css">
+		C:\Users\FAMILIA\Desktop\tienda java\src\main\webapp\LogUser.css
 		<script>
 			function Enviar() {
 				var valido = Validar();

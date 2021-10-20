@@ -6,40 +6,33 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>proveedores</title>
+<link rel="stylesheet" href="">
 </head>
 <body>
 	<%
-	//conexion a la base de datos
-	Connection BD;
-	String url="jdbc:mysql://misiontic2022grupo02.czo3ixoe3xoe.us-east-1.rds.amazonaws.com/";
-	String Driver="com.mysql.jdbc.Driver";
-	String user="admin";
-	String password="MisionTIC2022GRUPO02";
-	Class.forName(Driver);
-	BD=DriverManager.getConnection(url,user,password);
-	//Empezar a listar los datos de la tabla proveedores
 	PreparedStatement ps;
 	ResultSet rs;
 	ps=con.prepareStatement("Select * from Grupo02GitHubTeam.proveedores");
 	rs=ps.executeQuery();
 	%>
-	<div>
+	<div class="container">
 		<h1>Proveedores</h1>
-		<table>
+		<hr>
+		<table class="table table-bordered">
 			<tr>
-				<th>idproveedores</th>
-				<th>nombre</th>
-				<th>direccion</th>
-				<th>telefono</th>
-				<th>ciudad</th>
-				<th>nit</th>
-				<td>ACCIONES</td>
+				<th class="text-center">idproveedores</th>
+				<th class="text-center">nombre</th>
+				<th class="text-center">direccion</th>
+				<th class="text-center">telefono</th>
+				<th class="text-center">ciudad</th>
+				<th class="text-center">nit</th>
+				<th class="text-center">ACCIONES</th>
 			</tr>
 			<%
 				while(rs.next()){
 			%>
 			<tr>
-				<td><%=rs.getInt("idproveedores")%></td>
+				<td class="text-center"><%=rs.getInt("idproveedores")%></td>
 				<td><%=rs.getString("nombre")%></td>
 				<td><%=rs.getString("direccion")%></td>
 				<td><%=rs.getString("telefono")%></td>

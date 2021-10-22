@@ -8,7 +8,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 public class GithubteamApplication extends SpringBootServletInitializer{
 
 	public static void main(String[] args) {
-		System.setProperty("server.servlet.context-path", "/Grupo02GitHubTeam");
+		System.setProperty("server.servlet.context-path", "/githubteam");
 		SpringApplication.run(GithubteamApplication.class, args);
 	}
 

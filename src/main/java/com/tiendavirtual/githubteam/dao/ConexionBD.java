@@ -4,7 +4,8 @@ import java.sql.*;
 
 public class ConexionBD {
 
-	/*private String bd = "tienda_virtual";
+	/*
+	private String bd = "tienda_virtual";
 	private String login = "root";
 	private String passw = "admin";
 	private String url = "jdbc:mysql://localhost/" + bd;
